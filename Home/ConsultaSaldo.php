@@ -13,7 +13,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
-  header("Location: /Caixa");
+  header("Location: /TestCase");
   }
  
 $logado = $_SESSION['login'];
@@ -59,18 +59,18 @@ $dados= null;
 						<div class="gn-scroller">
 							<ul class="gn-menu">
 								
-								<li><a href="/Caixa/Home/ConsultaSaldo.php"  class="gn-icon gn-icon-download">Consultar Saldo</a></li>
-								<li><a href="/Caixa/Home/Saque.php" class="gn-icon gn-icon-cog">Saque</a></li>
-								<li><a href="/Caixa/Home/Deposito.php" class="gn-icon gn-icon-cog">Depósito</a></li>
+								<li><a href="/TestCase/Home/ConsultaSaldo.php"  class="gn-icon gn-icon-download">Consultar Saldo</a></li>
+								<li><a href="/TestCase/Home/Saque.php" class="gn-icon gn-icon-cog">Saque</a></li>
+								<li><a href="/TestCase/Home/Deposito.php" class="gn-icon gn-icon-cog">Depósito</a></li>
 								<li><a class="gn-icon gn-icon-help">Transfêrencia</a></li>
 								<li><a class="gn-icon gn-icon-archive">Consultar Extrato</a></li>
 							</ul>
 						</div><!-- /gn-scroller -->
 					</nav>
 				</li>
-				<li><a href="/Caixa/Home/">	Bem Vindo  <?php echo $_SESSION['login'] ?></a></li>
+				<li><a href="/TestCase/Home/">	Bem Vindo  <?php echo $_SESSION['login'] ?></a></li>
 				
-				<li><a href="/Caixa">Sair </a></li>
+				<li><a href="/TestCase">Sair </a></li>
 				
 				
 			</ul>

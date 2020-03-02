@@ -10,7 +10,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
 {
   unset($_SESSION['login']);
   unset($_SESSION['senha']);
-  header("Location: /Caixa");
+  header("Location: /TestCase");
   }
  $saldo  = $_POST['form-valor'];
  $CPF  = $_POST['form-cpf'];

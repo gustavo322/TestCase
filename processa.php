@@ -17,7 +17,7 @@ include_once("conexao.php");
         $dados =$stmt->fetch(PDO::FETCH_ASSOC);
         
 		if ($dados['usu_login'] == null){
-           header("Location: /Caixa");
+           header("Location: /TestCase");
             
         }else {
             $Id = $dados['usu_id'];
