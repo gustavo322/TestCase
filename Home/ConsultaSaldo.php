@@ -18,18 +18,21 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
  
 $logado = $_SESSION['login'];
 $ID_USU = $_SESSION['usuId'];
+
+$palavrachave = $_POST['form-Palavra'];
+
 $dados= null;
 			include_once("conexao.php");
 			
-		$sql = "SELECT * from `conta` WHERE cont_usuId = $ID_USU";
-		
+		$sql = "SELECT * from `conta` WHERE cont_CPF Like ('%$palavrachave%')";
 		
 		$stmt = $pdo->prepare( $sql );
 		$stmt->execute(array(':cont_usuId' => $_SESSION['usuId']));
 		$dados =$stmt->fetch(PDO::FETCH_ASSOC);
 		
-		
 		?>
+		
+
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -80,8 +83,10 @@ $dados= null;
 
 			                            <div align="center" class="form-bottom">
 							
-                    <input type="text" readonly="readonly" value = " <?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Saldo..." class="form-username form-control" id="form-username">
-							<button type="submit" class="btn">Atualizar Saldo!</button>
+                    <input type="text"  value = "<?php echo"$palavrachave" ?> " name="form-username" placeholder="Palavra Chave..." class="form-username form-control" id="form-Palavra">
+					<button type="submit" class="btn">Atualizar Saldo!</button>
+					<?php echo $dados['cont_saldo'];?>
+					
 									</div>
 									</form>
 		</div><!-- /container -->
