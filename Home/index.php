@@ -40,8 +40,7 @@ $logado = $_SESSION['login'];
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
-							<ul class="gn-menu">
-								
+							<ul class="gn-menu">								
 								<li><a href="/TestCase/Home/ConsultaSaldo.php"  class="gn-icon gn-icon-download">Consultar Saldo</a></li>
 								<li><a href="/TestCase/Home/Saque.php" class="gn-icon gn-icon-cog">Saque</a></li>
 								<li><a href="/TestCase/Home/Deposito.php" class="gn-icon gn-icon-cog">Depósito</a></li>

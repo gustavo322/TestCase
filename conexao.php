@@ -2,9 +2,9 @@
 
 $dsn = 'mysql:dbname=caixa;host=localhost';
 
-		$user = 'root';
+		$user = 'Gustavo';
 
-		$password = '';
+		$password = '558069Gu';
 
 		$pdo = new PDO( $dsn, $user, $password );
 
