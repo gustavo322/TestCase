@@ -9,4 +9,4 @@ $dsn = 'mysql:dbname=caixa;host=localhost';
 		$pdo = new PDO( $dsn, $user, $password );
 
 ?>
-gitig
+
