@@ -12,7 +12,7 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
   unset($_SESSION['senha']);
   header("Location: /TestCase");
   }
- $text  = $_POST['editor1'];
+ $saldo  = $_POST['form-valor'];
  $CPF  = $_POST['form-cpf'];
  
  
@@ -21,7 +21,8 @@ $ID_USU = $_SESSION['usuId'];
 $dados= null;
 			include_once("conexao.php");
 			
-			$sql = "UPDATE `conta` SET `cont_saldo`=  '$text' WHERE `cont_usuId` = $ID_USU";
+			$sql = "UPDATE `conta` SET `cont_saldo`= `cont_saldo` + $saldo WHERE `cont_usuId` = $ID_USU";
+			
 			$pdo->exec( $sql );
 		header("Location: Deposito.php");
 		

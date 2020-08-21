@@ -1,8 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
-	<script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
-
 		<?php 
 /* esse bloco de código em php verifica se existe a sessão, pois o usuário pode
  simplesmente não fazer o login e digitar na barra de endereço do seu navegador 
@@ -88,9 +86,8 @@ $dados= null;
 					<br>
 					<br>
 
-					
-					<textarea name="editor1" id ="editor1" ></textarea>
-					<script>CKEDITOR.replace( 'editor1' );</script>
+					<input type="text"  name="form-valor" placeholder="Valor..." class="form-valor form-control" id="form-valor">
+
 							<br>
 							<br>	
 							<button type="submit" class="btn">Depositar</button>

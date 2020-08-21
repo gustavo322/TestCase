@@ -18,21 +18,18 @@ if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == tru
  
 $logado = $_SESSION['login'];
 $ID_USU = $_SESSION['usuId'];
-
-$palavrachave = $_POST['form-Palavra'];
-
 $dados= null;
 			include_once("conexao.php");
 			
-		$sql = "SELECT * from `conta` WHERE cont_CPF Like ('%$palavrachave%')";
+		$sql = "SELECT * from `conta` WHERE cont_usuId = $ID_USU";
+		
 		
 		$stmt = $pdo->prepare( $sql );
 		$stmt->execute(array(':cont_usuId' => $_SESSION['usuId']));
 		$dados =$stmt->fetch(PDO::FETCH_ASSOC);
 		
-		?>
 		
-
+		?>
 
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
@@ -83,10 +80,15 @@ $dados= null;
 
 			                            <div align="center" class="form-bottom">
 							
+<<<<<<< HEAD
                     <input type="text"  value = "<?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Palavra Chave..." class="form-username form-control" id="form-Palavra">
 					<button type="submit" class="btn">Atualizar Saldo!</button>
 					
 					
+=======
+                    <input type="text" readonly="readonly" value = " <?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Saldo..." class="form-username form-control" id="form-username">
+							<button type="submit" class="btn">Atualizar Saldo!</button>
+>>>>>>> parent of 4c6c994... Alterando para inserir texto no banco de dados OK
 									</div>
 									</form>
 		</div><!-- /container -->
