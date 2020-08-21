@@ -70,7 +70,7 @@ $dados= null;
 				</li>
 				<li><a href="/TestCase/Home/">	Bem Vindo  <?php echo $_SESSION['login'] ?></a></li>
 				
-				<li><a href="/TestCase">Sair </a></li>
+				<li><a href="/TestCase">Sair</a></li>
 				
 				
 			</ul>
@@ -80,16 +80,11 @@ $dados= null;
 
 			                            <div align="center" class="form-bottom">
 							
-<<<<<<< HEAD
+
                     <input type="text"  value = "<?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Palavra Chave..." class="form-username form-control" id="form-Palavra">
 					<button type="submit" class="btn">Atualizar Saldo!</button>
 					
-					
-=======
-                    <input type="text" readonly="readonly" value = " <?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Saldo..." class="form-username form-control" id="form-username">
-							<button type="submit" class="btn">Atualizar Saldo!</button>
->>>>>>> parent of 4c6c994... Alterando para inserir texto no banco de dados OK
-									</div>
+														</div>
 									</form>
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
