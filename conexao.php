@@ -1,5 +1,6 @@
 <?php
 
+
 $dsn = 'mysql:dbname=caixa;host=localhost';
 
 		$user = 'Gustavo';
