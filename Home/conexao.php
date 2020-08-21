@@ -2,10 +2,11 @@
 
 $dsn = 'mysql:dbname=caixa;host=localhost';
 
-		$user = 'Gustavo';
+		$user = 'root';
 
-		$password = '558069Gu';
+		$password = '';
 
 		$pdo = new PDO( $dsn, $user, $password );
 
 ?>
+gitig

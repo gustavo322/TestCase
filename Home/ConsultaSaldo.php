@@ -83,9 +83,9 @@ $dados= null;
 
 			                            <div align="center" class="form-bottom">
 							
-                    <input type="text"  value = "<?php echo"$palavrachave" ?> " name="form-username" placeholder="Palavra Chave..." class="form-username form-control" id="form-Palavra">
+                    <input type="text"  value = "<?php echo $dados['cont_saldo'];?> " name="form-username" placeholder="Palavra Chave..." class="form-username form-control" id="form-Palavra">
 					<button type="submit" class="btn">Atualizar Saldo!</button>
-					<?php echo $dados['cont_saldo'];?>
+					
 					
 									</div>
 									</form>
